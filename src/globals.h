@@ -16,7 +16,7 @@ private:
     SDL_Texture* tex=NULL;
 
     SDL_Rect collider_box;
-    SDL_Rect animFrame;
+    
 
 public:
 

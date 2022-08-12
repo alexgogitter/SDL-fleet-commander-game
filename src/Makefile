@@ -8,11 +8,11 @@ OBJS = main.cpp render.cpp game.cpp globals.cpp
 #CC specifies which compiler we're using
 CC = g++
 
-#INCLUDE_PATHS specifies the additional include paths we'll need
-INCLUDE_PATHS = -IC:\mingw_dev_lib\include\SDL2
+#INCLUDE_PATHS specifies the additional include paths we'll need -IC:\mingw_dev_lib\include\SDL2
+INCLUDE_PATHS =  -I..\dependencies\include\SDL2
 
-#LIBRARY_PATHS specifies the additional library paths we'll need
-LIBRARY_PATHS = -LC:\mingw_dev_lib\lib
+#LIBRARY_PATHS specifies the additional library paths we'll need -LC:\mingw_dev_lib\lib
+LIBRARY_PATHS =  -L..\dependencies\lib
 
 #COMPILER_FLAGS specifies the additional compilation options we're using
 # -w suppresses all warnings
