@@ -11,6 +11,8 @@ private:
     bool collisions, sprite_sht;
     const char* sprite_load_path;
 
+    int cur_anim_tick=0, cur_anim=0;
+
     SDL_Renderer* renderer=NULL;
     SDL_Surface* sprite_surf=NULL;
     SDL_Texture* tex=NULL;
