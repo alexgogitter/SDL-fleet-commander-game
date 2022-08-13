@@ -3,6 +3,8 @@
 #include <SDL.h>
 #include <SDL_image.h>
 
+
+
 class Object
 {
     
@@ -16,6 +18,8 @@ private:
     SDL_Renderer* renderer=NULL;
     SDL_Surface* sprite_surf=NULL;
     SDL_Texture* tex=NULL;
+
+    
 
     SDL_Rect collider_box;
     SDL_Rect sprite_clipping_rect;

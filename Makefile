@@ -3,7 +3,7 @@
 #and may not be redistributed without written permission.
 
 #OBJS specifies which files to compile as part of the project
-OBJS = src\main.cpp src\render.cpp src\globals.cpp
+OBJS = src\main.cpp src\render.cpp src\globals.cpp src\animation_manager.cpp
 
 #CC specifies which compiler we're using
 CC = g++

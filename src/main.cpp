@@ -1,5 +1,6 @@
 #include <iostream>
 #include <stdio.h>
+
 #include "render.h"
 
 //Simple game design follows a Input -> Update -> draw Loop when running
@@ -22,11 +23,6 @@ int main( int argc, char* argv[] )
     while( !quit )
     {   
 
-        SDL_RenderClear(r.get_SDLRenderer());
-
-        o.draw(r.get_SDLRenderer());
-
-        SDL_RenderPresent(r.get_SDLRenderer());
 
         //Handle events on queue
         while( SDL_PollEvent( &e ) != 0 )
@@ -38,6 +34,13 @@ int main( int argc, char* argv[] )
                 quit = true;
             }
         }
+
+        
+        SDL_RenderClear(r.get_SDLRenderer());
+
+        o.draw(r.get_SDLRenderer());
+
+        SDL_RenderPresent(r.get_SDLRenderer());
 
         
     }

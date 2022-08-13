@@ -9,3 +9,4 @@ States will be the core component of the animation manager. States will have a n
 ## Anim_Manager
 
 Based on any given input will manage the state flow-chart and control which animation state the ```Object::Object ``` is in.
+When Update is called on an object, the ```Anim_Manager``` has to make sure that the sprite clipping rect is on the right section of the texture which has the animation.
