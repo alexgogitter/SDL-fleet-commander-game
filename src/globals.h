@@ -16,11 +16,13 @@ private:
     SDL_Texture* tex=NULL;
 
     SDL_Rect collider_box;
-    
+    SDL_Rect sprite_clipping_rect;
 
 public:
 
     Object(const char* sprite_path, int col_width, int col_height, bool col, SDL_Renderer* ren);
+
+    Object(const char* sprite_path, int spr_width, int spr_height, int col_width, int col_height, bool col, SDL_Renderer* ren);
 
     void update();
 

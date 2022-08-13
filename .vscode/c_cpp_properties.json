@@ -4,9 +4,7 @@
             "name": "Win32",
             "includePath": [
                 "${workspaceFolder}/**",
-                // "${workspaceFolder}/src/engine/**",
-                "C:/mingw_dev_lib/include/SDL2"
-                
+                "${workspaceFolder}/dependencies/include/SDL2"
             ],
             "defines": [
                 "_DEBUG",
@@ -17,7 +15,8 @@
             "compilerPath": "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.31.31103/bin/Hostx64/x64/cl.exe",
             "cStandard": "c17",
             "cppStandard": "c++17",
-            "intelliSenseMode": "windows-msvc-x64"
+            "intelliSenseMode": "windows-msvc-x64",
+            "configurationProvider": "ms-vscode.makefile-tools"
         }
     ],
     "version": 4

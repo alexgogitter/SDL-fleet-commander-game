@@ -3,16 +3,16 @@
 #and may not be redistributed without written permission.
 
 #OBJS specifies which files to compile as part of the project
-OBJS = main.cpp render.cpp game.cpp globals.cpp
+OBJS = src\main.cpp src\render.cpp src\globals.cpp
 
 #CC specifies which compiler we're using
 CC = g++
 
 #INCLUDE_PATHS specifies the additional include paths we'll need -IC:\mingw_dev_lib\include\SDL2
-INCLUDE_PATHS =  -I..\dependencies\include\SDL2
+INCLUDE_PATHS =  -Idependencies\include\SDL2
 
 #LIBRARY_PATHS specifies the additional library paths we'll need -LC:\mingw_dev_lib\lib
-LIBRARY_PATHS =  -L..\dependencies\lib
+LIBRARY_PATHS =  -Ldependencies\lib
 
 #COMPILER_FLAGS specifies the additional compilation options we're using
 # -w suppresses all warnings

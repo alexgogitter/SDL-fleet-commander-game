@@ -10,7 +10,7 @@ int main( int argc, char* argv[] )
     Renderer r = Renderer(600, 900, 60, IMG_INIT_PNG, "Test Render Window");
     r.Renderer_Init();
     SDL_RenderClear(r.get_SDLRenderer());
-    Object o = Object("../res/charSheet1.png", 300, 300, false, r.get_SDLRenderer());
+    Object o = Object("res/charSheet1.png", 300, 300, false, r.get_SDLRenderer());
 
     //Main loop flag
     bool quit = false;

@@ -5,7 +5,7 @@ Object::Object(const char* sprite_path, int col_width, int col_height, bool col,
     sprite_surf=IMG_Load(sprite_path);
     if(!sprite_surf)
     {
-        printf("Unable to load \"$s\" ERRROR: %s", sprite_path, IMG_GetError());
+        printf("Unable to load \"%s\" ERRROR: %s", sprite_path, IMG_GetError());
 
     }else{
         printf("A");
